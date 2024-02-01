@@ -1,128 +1,135 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link } from 'gatsby'
+import React from 'react'
+import Helmet from 'react-helmet'
+import pic01 from '../assets/images/pic01.jpg'
+import pic02 from '../assets/images/pic02.jpg'
+import pic03 from '../assets/images/pic03.jpg'
+import pic04 from '../assets/images/pic04.jpg'
+import pic05 from '../assets/images/pic05.jpg'
+import pic06 from '../assets/images/pic06.jpg'
+import Banner from '../components/Banner'
+import Layout from '../components/layout'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+class HomeIndex extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <Helmet
+          title="Gatsby Starter - Forty"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        ></Helmet>
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
+        <Banner />
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
+        <div id="main">
+          <section id="one" className="tiles">
+            <article style={{ backgroundImage: `url(${pic01})` }}>
+              <Link
+                aria-label="Link to Landing Page"
+                to="/landing"
+                className="link primary"
+              >
+                <header className="major">
+                  <h3>Aliquam</h3>
+                  <p>Ipsum dolor sit amet</p>
+                </header>
+              </Link>
+            </article>
+            <article style={{ backgroundImage: `url(${pic02})` }}>
+              <Link
+                aria-label="Link to Landing Page"
+                to="/landing"
+                className="link primary"
+              >
+                <header className="major">
+                  <h3>Tempus</h3>
+                  <p>feugiat amet tempus</p>
+                </header>
+              </Link>
+            </article>
+            <article style={{ backgroundImage: `url(${pic03})` }}>
+              <Link
+                aria-label="Link to Landing Page"
+                to="/landing"
+                className="link primary"
+              >
+                <header className="major">
+                  <h3>Magna</h3>
+                  <p>Lorem etiam nullam</p>
+                </header>
+              </Link>
+            </article>
+            <article style={{ backgroundImage: `url(${pic04})` }}>
+              <Link
+                aria-label="Link to Landing Page"
+                to="/landing"
+                className="link primary"
+              >
+                <header className="major">
+                  <h3>Ipsum</h3>
+                  <p>Nisl sed aliquam</p>
+                </header>
+              </Link>
+            </article>
+            <article style={{ backgroundImage: `url(${pic05})` }}>
+              <Link
+                aria-label="Link to Landing Page"
+                to="/landing"
+                className="link primary"
+              >
+                <header className="major">
+                  <h3>Consequat</h3>
+                  <p>Ipsum dolor sit amet</p>
+                </header>
+              </Link>
+            </article>
+            <article style={{ backgroundImage: `url(${pic06})` }}>
+              <Link
+                aria-label="Link to Landing Page"
+                to="/landing"
+                className="link primary"
+              >
+                <header className="major">
+                  <h3>Etiam</h3>
+                  <p>Feugiat amet tempus</p>
+                </header>
+              </Link>
+            </article>
+          </section>
+          <section id="two">
+            <div className="inner">
+              <header className="major">
+                <h2>Massa libero</h2>
+              </header>
+              <p>
+                Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
+                libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
+                Pellentesque condimentum sem. In efficitur ligula tate urna.
+                Maecenas laoreet massa vel lacinia pellentesque lorem ipsum
+                dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
+                sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
+                amet pharetra et feugiat tempus.
+              </p>
+              <ul className="actions">
+                <li>
+                  <Link
+                    aria-label="Link to Landing Page"
+                    to="/landing"
+                    className="button next"
+                  >
+                    Get Started
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </Layout>
+    )
+  }
+}
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
-const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
-)
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
-
-export default IndexPage
+export default HomeIndex
