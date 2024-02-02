@@ -4,21 +4,22 @@ const Banner = props => (
   <section id="banner" className="major">
     <div className="inner">
       <header className="major">
-        <h1>Hi, my name is Forty</h1>
+        <h1>Welcome to Boost Web Development</h1>
       </header>
       <div className="content">
         <p>
-          A responsive site template designed by HTML5 UP
-          <br />
-          and released under the Creative Commons.
+          <h2>
+            Empower your small business with effective web
+            solutions using modern frameworks!
+          </h2>
         </p>
-        <ul className="actions">
+        {/* <ul className="actions">
           <li>
-            <a href="#one" name="Get Started" className="button next scrolly">
+            <a href="#one" name="Get Started" className="button next">
               Get Started
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   </section>
