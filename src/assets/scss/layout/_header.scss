@@ -281,9 +281,9 @@
 
   @include breakpoint(xsmall) {
     .logo {
-      span {
-        display: none;
-      }
+      // span {
+      //   display: none;
+      // }
     }
 
     nav {
