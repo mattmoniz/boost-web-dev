@@ -16,3 +16,16 @@
 //     defer: true,
 //   })
 // }
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createRedirect } = actions
+
+  createRedirect({
+    fromPath: `http://www.boost-dev.com/`,
+    toPath: `https://boost-dev.com/`,
+  }),
+    createRedirect({
+      fromPath: `https://www.boost-dev.com/`,
+      toPath: `https://boost-dev.com/`,
+    })
+}
