@@ -2,12 +2,16 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Theme - Forty",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Theme based on Forty by HTML5 UP",
+    title: "Gatsby Web Dev Site",
+    author: "Matt Moniz",
+    description: "A Gatsby.js Theme for my web development business",
+    siteUrl: `https://boost-dev.com`,
   },
+
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -25,6 +29,22 @@ module.exports = {
       options: {
         path: path.join(__dirname, `src`, `pages`),
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.boost-dev.com',
+        sitemap: 'https://www.boost-dev.com/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{userAgent: '*', disallow: ['/']}]
+          },
+          production: {
+            policy: [{userAgent: '*', allow: '/'}]
+          }
+        }
+      }
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-offline",

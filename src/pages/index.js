@@ -15,7 +15,7 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="Boost Web Development"
+          title="Boost"
           meta={[
             { name: "description", content: "Sample" },
             { name: "keywords", content: "sample, something" },

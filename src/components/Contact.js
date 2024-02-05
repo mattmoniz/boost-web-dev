@@ -38,15 +38,7 @@ const Contact = (props) => (
                         <span>(000) 000-0000 x12387</span>
                     </div>
                 </section> */}
-                <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-home"></span>
-                        <h3>Address</h3>
-                        <span>6 Claire Ave<br />
-                        Mansfield, MA 02048<br />
-                        United States of America</span>
-                    </div>
-                </section>
+
             </section>
         </div>
     </section>
