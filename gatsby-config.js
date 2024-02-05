@@ -30,22 +30,22 @@ module.exports = {
         path: path.join(__dirname, `src`, `pages`),
       },
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://www.boost-dev.com',
-        sitemap: 'https://www.boost-dev.com/sitemap-index.xml',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{userAgent: '*', disallow: ['/']}]
-          },
-          production: {
-            policy: [{userAgent: '*', allow: '/'}]
-          }
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     host: 'https://www.boost-dev.com',
+    //     sitemap: 'https://www.boost-dev.com/sitemap-index.xml',
+    //     resolveEnv: () => process.env.GATSBY_ENV,
+    //     env: {
+    //       development: {
+    //         policy: [{userAgent: '*', disallow: ['/']}]
+    //       },
+    //       production: {
+    //         policy: [{userAgent: '*', allow: '/'}]
+    //       }
+    //     }
+    //   }
+    // },
     "gatsby-plugin-sass",
     "gatsby-plugin-offline",
   ],
