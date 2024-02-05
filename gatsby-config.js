@@ -34,7 +34,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.boost-dev.com',
-        sitemap: 'https://www.boost-dev.com/sitemap.xml',
+        sitemap: 'https://www.boost-dev.com/sitemap-index.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
