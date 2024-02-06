@@ -60,6 +60,7 @@ module.exports = {
           // safelist: ['safelist'], // Don't remove this selector
         },
         // More options defined here https://purgecss.com/configuration.html#options
+        //test
       },
     },
 
