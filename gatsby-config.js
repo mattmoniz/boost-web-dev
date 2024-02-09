@@ -1,5 +1,9 @@
 const path = require("path")
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Gatsby Web Dev Site",
@@ -22,7 +26,14 @@ module.exports = {
         background_color: "#663399",
         theme_color: "#663399",
         display: "minimal-ui",
+        icon: "B", // This path is relative to the root of the site.
         // icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-custom-api`,
+      options: {
+        apiKey: process.env.EMAILJS_PUBLIC_KEY,
       },
     },
     {
