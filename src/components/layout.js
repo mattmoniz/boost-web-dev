@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import '../assets/scss/main.scss'
-import Header from './Header'
-import Menu from './Menu'
-import Contact from './Contact'
-import Footer from './Footer'
+import Header from './Header.js'
+import Menu from './Menu.js'
+import Contact from './Contact.js'
+import Footer from './Footer.js'
 
 class Layout extends React.Component {
     constructor(props) {
