@@ -7,7 +7,7 @@ import pic11 from '../assets/images/pic11.jpg'
 const Pricing = props => (
   <Layout>
     <Helmet>
-      <title>APricing Information</title>
+      <title>Pricing Information</title>
       <meta name="pricing" content="Pricing Information" />
     </Helmet>
 
