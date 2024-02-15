@@ -17,6 +17,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-sass",
+    "gatsby-plugin-netlify",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -26,7 +27,7 @@ module.exports = {
         background_color: "#663399",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "B", // This path is relative to the root of the site.
+        icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
         // icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
       },
     },

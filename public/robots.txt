@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://boost-dev.com/sitemap-index.xml
+Host: https://boost-dev.com
