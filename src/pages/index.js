@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import pic01 from "../assets/images/web-design-3411373_1280.jpg"
 import pic02 from "../assets/images/gatsby-react-image.png"
 import pic03 from "../assets/images/seo-896175_1280.png"
-import pic04 from "../assets/images/ben-kolde-bs2Ba7t69mM-unsplash.jpg"
+import pic04 from "../assets/images/ben-kolde-bs2Ba7t69mM-unsplash.webp"
 import Banner from "../components/Banner"
 import Layout from "../components/layout"
 
