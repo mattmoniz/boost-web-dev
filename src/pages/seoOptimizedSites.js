@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-const pageSeoOptimizedSites = props => (
+const SeoOptimization = props => (
   <Layout>
     <Helmet>
       <title> SEO</title>
@@ -24,4 +24,4 @@ const pageSeoOptimizedSites = props => (
   </Layout>
 )
 
-export default pageSeoOptimizedSites
+export default SeoOptimization

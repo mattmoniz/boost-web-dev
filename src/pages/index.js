@@ -26,8 +26,8 @@ class HomeIndex extends React.Component {
           <section id="one" className="tiles">
             <article style={{ backgroundImage: `url(${pic01})` }}>
               <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
+                aria-label="Link to Improving Existing Website page"
+                to="/existingSite"
                 className="link primary"
               >
                 <header className="major">
@@ -41,8 +41,8 @@ class HomeIndex extends React.Component {
             </article>
             <article style={{ backgroundImage: `url(${pic02})` }}>
               <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
+                aria-label="Link to Building a new website Page"
+                to="/newSite"
                 className="link primary"
               >
                 <header className="major">
@@ -59,8 +59,8 @@ class HomeIndex extends React.Component {
             </article>
             <article style={{ backgroundImage: `url(${pic03})` }}>
               <Link
-                aria-label="Link to Landing Page"
-                to="/landing"
+                aria-label="Link to improving SEO Page"
+                to="/SeoOptimizedSites"
                 className="link primary"
               >
                 <header className="major">

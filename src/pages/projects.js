@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-const pageProjects = props => (
+const Projects = props => (
   <Layout>
     <Helmet>
       <title> Projects</title>
@@ -25,4 +25,4 @@ const pageProjects = props => (
   </Layout>
 )
 
-export default pageProjects;
+export default Projects;

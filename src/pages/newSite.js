@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
-const pageNewSite = props => (
+const NewSite = props => (
   <Layout>
     <Helmet>
       <title> Build a Brand New Site</title>
@@ -24,4 +24,4 @@ const pageNewSite = props => (
   </Layout>
 )
 
-export default pageNewSite;
+export default NewSite;
